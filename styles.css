@@ -1,3 +1,12 @@
+:root {
+    --color-primary: #0a2540;
+    --color-accent: #3b82f6;
+    --color-bg: #f9fafb;
+    --color-text: #1f2933;
+    --color-muted: #6b7280;
+
+    --font-main: 'Segoe UI', Tahoma, sans-serif;
+}
 /* Reset básico */
 * {
     box-sizing: border-box;
@@ -6,36 +15,50 @@
 /* Estilos globales */
 body {
     margin: o;
-    background-color: #f4f4f4;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    color: #333;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
     line-height: 1.6;
 }
 
 /* Contenedor reutilizable */
 .container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem 1.5rem;
 }
 
 /* Header */
 .header {
-    background-color: #222;
-    color: white;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 4rem 1rem;
     }
 
 .header h1 {
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
 }
 
 /* Secciones */
 .section {
     background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.section:hover {
+    transform: translate(-4px);
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.section h2 {
+    margin-top: 0;
+    color: var(--color-primary);
+    font-size: 1.5rem;
 }
 
 /*Footer */
