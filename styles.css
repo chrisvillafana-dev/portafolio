@@ -35,6 +35,7 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /*Footer */
@@ -52,7 +53,13 @@ body {
 .project:hover {
     transform: translateX(5px);
 }
+p {
+    margin-bottom: 10 px;
+}
 @media (max-width: 768px)
+a {
+    word-break: break-word;
+}
 body {
     font=size: 16px;
 }
@@ -67,4 +74,8 @@ h1 {
 }
 .section {
     padding: 15px;
+}
+.header p {
+    margin-top: 5px;
+    font-size: 0.95rem;
 }
