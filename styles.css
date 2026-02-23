@@ -104,16 +104,17 @@ body {
 }
 
 .contact-button {
-    display: inline-block;
     padding: 12px 20px;
     background: #1f3b5b;
     color: white;
     border-radius: 8px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s;
 }
 .contact-button:hover {
     background: #2a517d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(31, 59, 91, 0.25);
 }
 /*Footer */
 .footer {
@@ -163,6 +164,16 @@ p {
 }
 .project-link:hover {
     text-decoration: underline;
+}
+.project-tag {
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 999px;
 }
 
 
