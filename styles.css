@@ -175,7 +175,12 @@ p {
     background-color: rgba(59, 130, 246, 0.1);
     border-radius: 999px;
 }
-
+.project-message {
+    margin-bottom: 1rem;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    display: none;
+}
 
 @media (max-width: 768px) {
 a {
