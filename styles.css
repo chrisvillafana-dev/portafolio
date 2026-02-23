@@ -133,6 +133,38 @@ body {
 p {
     margin-bottom: 10px;
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border:  1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.project-card h3 {
+    margin-top: 0;
+    color: var(--color-primary)
+}
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
 a {
